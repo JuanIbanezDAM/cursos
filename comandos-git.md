@@ -124,5 +124,6 @@ $ ```git merge --continue```
 Crea una copia local de un repositorio remoto, incluyendo sus versiones e historial de commits.
 Origin es el nombre que normalmente le asignamos al repositorio remoto que clonamos. Es un estandar y es el nombre que le vamos a asignar en git, en nuestra copia local del repositorio.
 
-Clonar un respositorio
-$ ```git clone```
+Clonar un respositorio  
+Recuerda que se hara la copia donde estes situado en la terminal  
+$ ```git clone url-del-repositorio```
