@@ -33,7 +33,6 @@ Según en el área que se encuentren:
    - Preparada (Staged): - Área de preparación A
    - Confirmada (Committed): - Repositorio
 
-
 ## Cómo subir un archivo al repositorio
 
 Añadir el archivo al área de preparación  
@@ -120,3 +119,10 @@ $ ```git merge mi-rama```
 
 Conflicto al fusionar ramas  
 $ ```git merge --continue```
+
+## Clonar un repositorio
+Crea una copia local de un repositorio remoto, incluyendo sus versiones e historial de commits.
+Origin es el nombre que normalmente le asignamos al repositorio remoto que clonamos. Es un estandar y es el nombre que le vamos a asignar en git, en nuestra copia local del repositorio.
+
+Clonar un respositorio
+$ ```git clone```
