@@ -56,11 +56,11 @@ Git le asigna a cada commit un identificador único llamado SHA o HASH.
 ## Convenciones del commit.  
 Conjunto de reglas para crear los mensajes del commit.  
   Tipo: describen el propósito del commit:  
-       - feat: Nueva funcionalidad
-       - fix: Corregir un error
-       - docs: Cambios en la documentación
-       - test: Agregar pruebas o correcciones a las ya existentes
-       - refactor: Refactorización de código
+-   feat: Nueva funcionalidad
+-   fix: Corregir un error
+-   docs: Cambios en la documentación
+-   test: Agregar pruebas o correcciones a las ya existentes
+-   refactor: Refactorización de código
 
 Crear un commit  
 $ ```git commit -m "tipo(ámbito): descripción"```
