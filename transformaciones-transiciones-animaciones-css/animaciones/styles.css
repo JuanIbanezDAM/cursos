@@ -1,0 +1,87 @@
+/* estilos generales */
+main {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+
+.caja-animacion {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+    background-color: blue;
+}
+
+/* -- ANIMACIONES -- */
+
+/* -- Propiedades -- */
+/* 
+animation-duration  :  duración en s o ms
+animation-name  :  para asociar keyframes con la animación
+animation-delay  :  retraso para que comience en s o ms
+animation-timing-function  :  curva de modificación de los valores
+animation-iteration-count  :  num de reproducciones o infinite
+animation-direction  :  normal, reverse, alternate, alternate-reverse
+animation-play-state
+*/
+/* 
+
+selector {
+    animation-name: ejemplo;
+    animation-...
+    animation-...
+}
+
+@keyframes ejemplo {
+    0% {propiedaddes-css-vi}
+    ...
+    ...
+    X% {propiedaddes-css-vX}
+    ...
+    ...
+    100% {propiedaddes-css-vf}
+}
+ */
+
+#caja1 {
+    left: 0;
+    top: 0;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: calc(100% - 100px);
+        /* 
+        100% equivale al ancho completo del contenedor 
+        -100px el tamaño de la caja para que no salga de la pantalla 
+        */
+    }
+
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+
+    75% {
+        top: calc(100% - 100px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+
+    }
+}

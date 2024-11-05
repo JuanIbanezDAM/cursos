@@ -1,0 +1,60 @@
+/* estilos generales */
+main {
+    align-content: center;
+    text-align: center;
+}
+
+.img-ejemplo {
+    width: auto;
+    height: 400px;
+    align-content: center;
+    margin: 0 auto;
+
+    padding: 0 0 4em 0;
+}
+
+/* -- TRANSICIONES -- */
+
+/* -- Propiedades -- */
+/* 
+rotate
+translate
+scale
+skew
+perspective
+*/
+
+/*  Rotacion */
+.img-transformacion:hover {
+    transform: rotate(20deg);
+    /* Grados */
+}
+
+/*  Translacion */
+.img-translate:hover {
+    transform: translate(4rem, 2rem);
+    /* x, y */
+}
+
+/*  Escalar */
+.img-scale:hover {
+    transform: scale(1.2, 1.2);
+    /* x, y */
+}
+
+/*  Skew */
+.img-skew:hover {
+    transform: skew(20deg, 20deg);
+    /* angulo x, y */
+}
+
+/* TRANSFORMACIONES COMBINADAS */
+.img-trnasformaciones-combinadas:hover {
+    transform: rotate(-20deg)translate(4rem)scale(0.8);
+}
+
+/* Podemos cambiar el punto de origen donde se aplica las transformaciones */
+.img-trnasformaciones-combinadas:hover {
+    transform: rotate(-20deg)translate(4rem)scale(0.8);
+    transform-origin: top left;/*  */
+}
